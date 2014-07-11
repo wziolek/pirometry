@@ -1,0 +1,511 @@
+body{
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Helvetica;
+}
+
+#pirometry{
+    margin: auto;
+    width: 1280px;
+}
+
+header{
+	padding: 0px 85px 0px 85px;
+    margin: 0 0 0 0;
+    background: #5a5859;
+    width: 1110px;
+    height: 90px;
+}
+
+footer{
+    margin: 0 0 0 0;
+    background: #f6f5f1;
+    height: 225px;
+}
+.center{
+	padding: 0px 85px 0px 85px;
+    margin: 0 0 0 0;
+}
+
+#menu_top{
+    display: inline-block;
+    display: block;
+    width: 100%;
+    height: 90px;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+#menu_down{
+    display: block;
+    width: 100%;
+    height: 20px;
+    text-decoration: none;
+}
+
+nav {
+    float: left;
+}
+
+nav > ul {
+    text-decoration: none;
+    list-style: none outside none;
+    margin:0;
+}
+
+#bok{
+    /*wyrzuciłem display bo psuł wyśiwetlanie pod menu*/
+    text-decoration: none;
+    list-style: none;
+    margin: -100px 0px 0px 325px;
+    color: #949494;
+    width: 300px;
+    display: inline-block;
+
+}
+
+nav > ul > li{
+    text-decoration: none;
+    float: left;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 25px 28px 25px;
+    color: #949494;
+    font-family: inherit;
+
+}
+
+nav li div { /*zamieniłem ul na div ponieważ teraz mamy diva który musimy ukryć anie każdy z ul osobno */
+/*wyrzuciłem display bo psuł wyśiwetlanie pod menu*/
+    position: absolute;
+    left: -999em;
+    font-size: 12px;
+    background: #eeeeee;
+    border-radius: 0px;
+    width: 650px;
+    height: 300px;
+    color: #949494;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+	border-radius: 5px;
+}
+
+/*naprawa dolne menu przesuwająć je ponad pasek menu*/
+#pirometry_d nav li > div {
+    margin-top: -350px;
+}
+
+nav li:hover div {/*zamieniłem ul na div ponieważ teraz mamy diva który musimy ukryć anie każdy z ul osobno */
+    left: auto;
+}
+
+nav li ul li{
+    text-decoration: none;
+    margin: 5px 0px 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+nav li ul li:hover{
+    color: #949494;
+    /*usunąłę text-show bo nie ma czegoś takiego*/
+}
+
+/* unvisited link */
+a:link {
+    color: #949494;
+	 text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: #6BBEAB;
+    text-decoration: none;
+}
+/* selected link */
+a:active {
+    color: #0000FF;
+    text-decoration: none;
+}
+/*style artykułów*/
+
+#logo2 {
+    width: 200px;
+    height: 60px;
+    border: 0px none;
+    background-image: url('images/logo2.png');
+    padding: 0px;
+    margin: 20px 0px 0px;
+    float: left;
+    display: inline-block;
+}
+
+.hr_gor{
+    height: 1px;
+    display: block;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 0; /*zmieniłem margines*/
+    padding: 0;
+}
+
+.wyszukiwarka {
+    padding: 20px 0 0 0;
+    float: right;
+    display: inline-block;
+}
+
+.wyszukiwarka .submit {
+    width: 25px;
+    height: 25px;
+    border: 0px none;
+}
+
+.wyszukiwarka_pokazana {
+    padding:0;
+    background: #eeeeee;
+    border-radius: 5px;
+    width: 650px;
+    height: 300px;
+    position: absolute;
+    left: -999em;
+	margin:-4px 0 0 0px
+}
+
+.wyszukiwarka form:hover .wyszukiwarka_pokazana{
+    left: auto;
+    margin-left: -450px;
+}
+
+.wy1{
+    width: 350px;
+    height:35px;
+    background: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-width:1px;
+    border-color: #b0b0b0;
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+
+.wy2{
+    width: 150px;
+    height:40px;
+    background: #949494;
+    border-style: solid;
+    border-width:1px;
+    border-color: #b0b0b0;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+    font-size: 16px;
+    margin: 0px 0 0 82px;
+}
+
+.wyszukiwarka form:hover .wyszukiwarka_pokazana > h1{
+    text-align: left;
+    color: #949494;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+}
+.wyszukiwarka form:hover .wyszukiwarka_pokazana .hr_wy {
+    height: 1px;
+    display: block;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.trojkat {
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #ec4000 transparent transparent transparent;
+    margin: -30px 0 0 250px ;
+}
+
+
+.wyszukiwarka form:hover .wyszukiwarka_pokazana > h2{
+    text-align: left;
+    color: #949494;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 10px;
+    max-width:100px;
+}
+
+.wartosc1{
+    width: 250px;
+    height:40px;
+    background: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-width:1px;
+    border-color: #b0b0b0;
+    margin: -10px 235px 0 0px ;
+    text-align: center;
+}
+
+.wyszukiwarka form:hover .wyszukiwarka_pokazana > h3{
+    text-align: left;
+    color: #949494;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 10px;
+    max-width:100px;
+}
+
+.przycisk2 {
+    background-color: transparent;
+    width: 125px;
+    height:40px;
+    background: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-width:1px;
+    border-color: #6BBEAB;
+    padding: 0;
+    color: black;
+    text-align: center;
+    color: #6BBEAB;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+#center > h3 {
+    text-align: center;
+    margin: 100px 0 0 0;
+    font-size: 34px;
+    color: #595959;
+}
+
+
+#center > h5 {
+    text-align: center;
+    margin: 100px 0 0 0;
+    font-size: 24px;
+}
+
+#pirometrypl > h1 {
+    text-align: left;
+    font-size: 24px;
+    color: #595959;
+}
+
+#pirometrypl > p {
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    max-width:400px;
+    color: #595959;
+}
+
+#pirometrypl > a {
+    font-size: 14px;
+    color: #64c6af;
+}
+
+#pirometr{
+    width: 400px;
+    margin: -90px 0 0 800px ;
+}
+
+.produkty{
+    width: 100%;
+    background: #f6f5f1;
+    height: 800px;
+    text-align: right;
+}
+
+.baner_a{
+    background-color: #ec4000;
+    max-width: 350px;
+    height: 430px
+}
+
+.baner_a >h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    max-width: 400px;
+}
+
+.baner_a > p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 400px;
+    color: #ffffff;
+}
+
+.baner_b {
+    margin: 0 0 0 930px;
+    display: inline-block;
+    text-align: center;
+    background-color: #dff5f3;
+    max-width: 350px;
+    height: 430px;
+
+}
+
+.baner_b >h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #595959;
+    max-width:400px;
+}
+
+.baner_b > p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 400px;
+    color: #595959;
+}
+
+#newsletter > strong {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-top:30;
+}
+
+#newsletter > p {
+    font-size: 16px;
+    text-align: center;
+}
+
+#newsletter > form {
+    font-size: 16px;
+    text-align: center;
+}
+
+.przycisk_wyslij {
+    background-image: url('images/przycisk_wyslij.png');
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.pole_wyslij {
+    background-image: url('images/pole_wyslij.png');
+    background-color: transparent;
+    width: 400px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    margin:0;
+    text-align: center;
+    color: #595959;
+}
+
+#piroemtry_d{
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin: 0px 0 0 200px ;
+ }
+
+.logo2{}
+
+.hr_dol {
+    margin:0;
+	color:#ecebe9;
+}
+
+nav {
+    display: inline-block; /*ustawiam nav żeby wyświetlało się wtej samej lini w menu*/
+}
+
+/*produkty*/
+
+.produkty_podstrona{
+}
+.prostokat1{
+	text-decoration: none;
+	display: inline-block;
+	width: 354px; 
+    height: 110px;
+	background: #ec4000;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #ec4000;
+	margin: 0 5px 10px 5px;
+    padding: 70px 0 0 0;
+	text-align: center;
+	color: white;
+	font-family: inherit;
+	font-weight: bold;
+	}
+	
+.produkty_podstrona> a{
+	color:#ffffff;
+}
+
+.produkty_podstrona a:hover {
+	background-color: white;
+	border-radius: 5px;
+	border-width: 1px;
+	color:#ec4000;
+ }
+
+.prostokat a:link {
+	background-color: white;
+}
+
+.prostokat a:active {
+	background-color: white;
+	color:#ec4000;
+}
+/*producenci*/
+.prostokat2{
+	text-decoration: none;
+	display: inline-block;
+	width: 260px; 
+    height: 90px;
+	background: #6BBEAB;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #6BBEAB;
+	margin: 0 5px 10px 5px;
+    padding:50px 0 0 0;
+	text-align: center;
+	color: white;
+	font-family: inherit;
+	font-weight: bold;
+	}
+	
+.produkty_podstrona> a{
+	color:#ffffff;
+}
+
+.produkty_podstrona a:hover {
+	background-color: white;
+	border-radius: 5px;
+	border-width: 1px;
+	color:#6BBEAB;
+ }
+
+.prostokat2 a:link {
+	background-color: white;
+}
+
+.prostokat2 a:active {
+	background-color: white;
+	color:#6BBEAB;
+}
