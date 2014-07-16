@@ -14,19 +14,16 @@ body{
 }
 
 header{
-	padding: 0px 85px 0px 85px;
-    margin: 0 0 0 0;
+    padding: 0px;
+    margin: 0px;
     background: #f9f9f9;
-    width: 1115px;
     height: 90px;
+    text-align: center;
 }
 
-header{
-	padding: 0px 85px 0px 85px;
-    margin: 0 0 0 0;
-    background: #f9f9f9;
+header > div{
     width: 1110px;
-    height: 90px;
+    display: inline-block;
 }
 
 footer{
@@ -77,22 +74,21 @@ nav > ul {
 }
 
 nav > ul > li{
-    text-decoration: none;
     float: left;
 }
 
 nav > ul > li > a{
     text-decoration: none;
     display: inline-block;
-    margin: 10px 25px 28px 25px;
+    margin: 10px 25px 41px 25px;
     color: #949494;
 	font-size:16px;
 	font-family: proxima-nova, sans-serif;
 }
 
-nav li div { /*zamieniłem ul na div ponieważ teraz mamy diva który musimy ukryć anie każdy z ul osobno */
+/*nav li div { /*zamieniłem ul na div ponieważ teraz mamy diva który musimy ukryć anie każdy z ul osobno */
 /*wyrzuciłem display bo psuł wyśiwetlanie pod menu*/
-    position: absolute;
+/*    position: absolute;
     left: -999em;
     font-size: 12px;
     background: #eeeeee;
@@ -102,10 +98,21 @@ nav li div { /*zamieniłem ul na div ponieważ teraz mamy diva który musimy ukr
     color: #949494;
 	font-size:12px;
 	font-family: proxima-nova, sans-serif;
-	font-weight:semibold;
+	font-weight: semibold;
     text-decoration: none;
 	border-radius: 5px;
 	letter-spacing: 0,75px;
+}*/
+
+nav .submenu ul{
+    padding: 0 90px 0 0;
+    margin: 0;
+    font-size: 12px;
+    float: left;
+}
+
+nav .submenu strong{
+    text-transform: uppercase;
 }
 
 /*naprawa dolne menu przesuwająć je ponad pasek menu*/
@@ -186,7 +193,7 @@ a:active {
     border: 0px none;
 }
 
-.wyszukiwarka_pokazana {
+.submenu {
     padding: 20px;
     background: #eeeeee;
     border-radius: 5px;
@@ -195,22 +202,22 @@ a:active {
     left: -999em;
 }
 
-.wyszukiwarka_pokazana strong {
+.submenu strong {
     margin: 5px 0 0 0;
     color: orange;
 }
 
-.wyszukiwarka_pokazana div{
+.submenu div{
     display: none;
 }
 
-.wyszukiwarka:hover .wyszukiwarka_pokazana{
+.wyszukiwarka:hover .submenu{
     left: auto;
     margin-left: -470px;
 }
 
 /*wcześniej to był wy1 i wy2, zamiast dodwania klasy można zrobić to tak*/
-.wyszukiwarka_pokazana input[type=text]{
+.submenu input[type=text]{
     width: 330px;
     height: 45px;
     background: white;
@@ -222,7 +229,7 @@ a:active {
     margin: 0;
     text-align: center;
 }
-.wyszukiwarka_pokazana input[type=submit]{
+.submenu input[type=submit]{
     width: 150px;
     height: 45px;
     background: #949494;
@@ -262,14 +269,14 @@ a:active {
     margin: 0px 0 0 82px;
 }*/
 
-.wyszukiwarka form:hover .wyszukiwarka_pokazana > h1{
+.wyszukiwarka form:hover .submenu > h1{
     text-align: left;
     color: #949494;
     font-family: inherit;
     font-weight: bold;
     font-size: 16px;
 }
-.wyszukiwarka form:hover .wyszukiwarka_pokazana .hr_wy {
+.wyszukiwarka form:hover .submenu .hr_wy {
     height: 1px;
     display: block;
     border: 0;
@@ -288,7 +295,7 @@ a:active {
 }
 
 
-.wyszukiwarka .wyszukiwarka_pokazana > h2{
+.wyszukiwarka .submenu > h2{
     text-align: left;
     color: #949494;
     font-family: inherit;
@@ -298,7 +305,7 @@ a:active {
 }
 
 /*.wartosc1{ zmieniam na*/
-.wyszukiwarka_pokazana div input[type=text]{
+.submenu div input[type=text]{
     width: 250px;
     height:40px;
     background: white;
@@ -310,7 +317,7 @@ a:active {
     display: block;
 }
 
-.wyszukiwarka_pokazana label{
+.submenu label{
     text-align: left;
     color: #949494;
     font-family: inherit;
