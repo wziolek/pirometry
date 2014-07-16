@@ -14,19 +14,16 @@ body{
 }
 
 header{
-	padding: 0px 85px 0px 85px;
-    margin: 0 0 0 0;
+    padding: 0px;
+    margin: 0px;
     background: #f9f9f9;
-    width: 1115px;
     height: 90px;
+    text-align: center;
 }
 
-header{
-	padding: 0px 85px 0px 85px;
-    margin: 0 0 0 0;
-    background: #f9f9f9;
+header > div{
     width: 1110px;
-    height: 90px;
+    display: inline-block;
 }
 
 footer{
